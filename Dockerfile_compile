@@ -1,0 +1,11 @@
+FROM golang:1.12.4 as builder
+
+WORKDIR /subscan-end
+
+COPY go.mod .
+
+COPY go.sum .
+
+RUN go mod download
+
+COPY . /subscan-end

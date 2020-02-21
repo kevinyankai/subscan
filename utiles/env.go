@@ -12,7 +12,8 @@ const (
 var (
 	Environment      string
 	Dev              = "dev"
-	ProviderEndPoint = GetEnv("CHAIN_WS_ENDPOINT", "wss://crayfish.darwinia.network/")
+	ProviderEndPoint = GetEnv("CHAIN_WS_ENDPOINT", "wss://172.18.0.1:3001/")
+	// ProviderEndPoint = GetEnv("CHAIN_WS_ENDPOINT", "wss://crayfish.darwinia.network/")
 	NetworkNode      = GetEnv("NETWORK_NODE", DarwiniaNetwork)
 )
 
