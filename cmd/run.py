@@ -22,7 +22,8 @@ def daemon_status():
 def main():
     argv = sys.argv
     op, log_file = [], ""
-    endpoint_pool = ["wss://crayfish.subscan.network/"]
+    # endpoint_pool = ["wss://crayfish.subscan.network/"]
+    endpoint_pool = ["ws://localhost:3001/"]
     if len(argv) == 1:
         os.system('./subscan -conf ../configs')
     elif argv[1] == "substrate":

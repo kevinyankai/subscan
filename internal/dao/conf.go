@@ -19,7 +19,7 @@ type (
 )
 
 func (dc *MysqlConf) mergeEnvironment() {
-	dbHost := utiles.GetEnv("MYSQL_HOST", "172.18.0.1")
+	dbHost := utiles.GetEnv("MYSQL_HOST", "localhost")
 	dbUser := utiles.GetEnv("MYSQL_USER", "root")
 	dbPass := utiles.GetEnv("MYSQL_PASS", "root")
 	dbName := utiles.GetEnv("MYSQL_DB", "subscan-end")
